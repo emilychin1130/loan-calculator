@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3Nk-oj-39P">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fSV-eb-OJu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Affordable Loan Amount-->
         <scene sceneID="ej9-ft-jev">
             <objects>
                 <viewController id="3Nk-oj-39P" customClass="LoanViewController" customModule="LoanCalculator" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,61 +21,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf5-Mh-XVd">
-                                <rect key="frame" x="155" y="271" width="86" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="bQN-5t-fKr">
-                                <rect key="frame" x="53" y="125" width="126.5" height="90"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bQN-5t-fKr">
+                                <rect key="frame" x="20" y="114" width="335" height="120"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Avk-sw-xBg">
-                                        <rect key="frame" x="0.0" y="0.0" width="126.5" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Avk-sw-xBg">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Loan Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojW-LP-A1K">
-                                                <rect key="frame" x="0.0" y="0.0" width="101.5" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojW-LP-A1K">
+                                                <rect key="frame" x="0.0" y="0.0" width="185" height="30"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                <color key="textColor" red="0.32385964119999999" green="0.36837722080000002" blue="0.21677849630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nhf-qJ-iHX">
-                                                <rect key="frame" x="101.5" y="0.0" width="25" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nhf-qJ-iHX">
+                                                <rect key="frame" x="185" y="0.0" width="150" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="FoP-i3-qrc"/>
+                                                </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VbO-zn-oEO">
-                                        <rect key="frame" x="0.0" y="30" width="126.5" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbO-zn-oEO">
+                                        <rect key="frame" x="0.0" y="45" width="335" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Term" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-Cr-LfS">
-                                                <rect key="frame" x="0.0" y="0.0" width="39.5" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Term in Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-Cr-LfS">
+                                                <rect key="frame" x="0.0" y="0.0" width="185" height="30"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                <color key="textColor" red="0.32385964119999999" green="0.36837722080000002" blue="0.21677849630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D78-kw-WxH">
-                                                <rect key="frame" x="39.5" y="0.0" width="87" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D78-kw-WxH">
+                                                <rect key="frame" x="185" y="0.0" width="150" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="lgj-lT-DB8"/>
+                                                </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aj8-15-8iB">
-                                        <rect key="frame" x="0.0" y="60" width="126.5" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aj8-15-8iB">
+                                        <rect key="frame" x="0.0" y="90" width="335" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9W-hm-ONP">
-                                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annual Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9W-hm-ONP">
+                                                <rect key="frame" x="0.0" y="0.0" width="185" height="30"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
+                                                <color key="textColor" red="0.32385964119999999" green="0.36837722080000002" blue="0.21677849630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CJv-Cr-JNg">
-                                                <rect key="frame" x="63.5" y="0.0" width="63" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CJv-Cr-JNg">
+                                                <rect key="frame" x="185" y="0.0" width="150" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="yKX-DA-Mwh"/>
+                                                </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -84,25 +86,131 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="VbO-zn-oEO" secondAttribute="trailing" id="EiZ-mQ-7L4"/>
-                                    <constraint firstAttribute="trailing" secondItem="Avk-sw-xBg" secondAttribute="trailing" id="IaN-YO-qT9"/>
-                                    <constraint firstAttribute="trailing" secondItem="aj8-15-8iB" secondAttribute="trailing" id="clX-a4-u4g"/>
+                                    <constraint firstAttribute="trailing" secondItem="VbO-zn-oEO" secondAttribute="trailing" id="703-YN-Ay4"/>
+                                    <constraint firstAttribute="trailing" secondItem="Avk-sw-xBg" secondAttribute="trailing" id="O7m-ob-oz0"/>
+                                    <constraint firstAttribute="trailing" secondItem="aj8-15-8iB" secondAttribute="trailing" id="YQU-Ig-NBy"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ua2-wY-uCE">
-                                <rect key="frame" x="109" y="223" width="104" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Calculate"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ua2-wY-uCE">
+                                <rect key="frame" x="20" y="274" width="335" height="40"/>
+                                <color key="backgroundColor" red="0.87794818435737487" green="1" blue="0.57133820180306949" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5T6-TS-BV2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateButton:" destination="3Nk-oj-39P" eventType="touchUpInside" id="zC1-c0-guG"/>
+                                </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sXV-El-pZf">
+                                <rect key="frame" x="25" y="455.5" width="112" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qf-I1-AlM">
+                                        <rect key="frame" x="26.5" y="0.0" width="59.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Interest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaE-VW-UOr">
+                                        <rect key="frame" x="0.0" y="26.5" width="112" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                        <color key="textColor" red="0.32385964119999999" green="0.36837722080000002" blue="0.21677849630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iQm-Tp-WdS">
+                                <rect key="frame" x="230.5" y="456" width="119.5" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApI-ek-6Jf">
+                                        <rect key="frame" x="30" y="0.0" width="59.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWE-ey-XtU">
+                                        <rect key="frame" x="0.0" y="26.5" width="119.5" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                        <color key="textColor" red="0.32385964119999999" green="0.36837722080000002" blue="0.21677849630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kho-hN-Bmx">
+                                <rect key="frame" x="86" y="354" width="202.5" height="51.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf5-Mh-XVd">
+                                        <rect key="frame" x="68.5" y="0.0" width="65.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Affordable Loan Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FB-kZ-ODO">
+                                        <rect key="frame" x="0.0" y="29" width="202.5" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                        <color key="textColor" red="0.32385964119999999" green="0.36837722080000002" blue="0.21677849630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.9948931506931693" green="1" blue="0.81250655496027235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ua2-wY-uCE" firstAttribute="top" secondItem="bQN-5t-fKr" secondAttribute="bottom" constant="40" id="4c3-mX-Y13"/>
+                            <constraint firstItem="sXV-El-pZf" firstAttribute="top" secondItem="kho-hN-Bmx" secondAttribute="bottom" constant="50" id="9YU-wk-cAx"/>
+                            <constraint firstItem="ua2-wY-uCE" firstAttribute="leading" secondItem="133-Hb-nNF" secondAttribute="leading" constant="20" id="DlH-hi-Tmz"/>
+                            <constraint firstItem="bQN-5t-fKr" firstAttribute="leading" secondItem="133-Hb-nNF" secondAttribute="leading" constant="20" id="Egx-1h-ulg"/>
+                            <constraint firstItem="kho-hN-Bmx" firstAttribute="centerX" secondItem="133-Hb-nNF" secondAttribute="centerX" id="PQQ-tp-tlS"/>
+                            <constraint firstItem="iQm-Tp-WdS" firstAttribute="centerY" secondItem="sXV-El-pZf" secondAttribute="centerY" id="WYv-5k-QzO"/>
+                            <constraint firstItem="kho-hN-Bmx" firstAttribute="top" secondItem="ua2-wY-uCE" secondAttribute="bottom" constant="40" id="bLw-mQ-xQz"/>
+                            <constraint firstAttribute="trailing" secondItem="ua2-wY-uCE" secondAttribute="trailing" constant="20" id="hCv-8P-oq7"/>
+                            <constraint firstItem="bQN-5t-fKr" firstAttribute="top" secondItem="Xg0-Hw-REi" secondAttribute="bottom" constant="50" id="iFf-TD-G5q"/>
+                            <constraint firstItem="sXV-El-pZf" firstAttribute="leading" secondItem="133-Hb-nNF" secondAttribute="leading" constant="25" id="kNv-to-Gsh"/>
+                            <constraint firstAttribute="trailing" secondItem="iQm-Tp-WdS" secondAttribute="trailing" constant="25" id="lzC-Jq-g5R"/>
+                            <constraint firstAttribute="trailing" secondItem="bQN-5t-fKr" secondAttribute="trailing" constant="20" id="rmm-Y1-t8Q"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="DSJ-Nh-z9r"/>
+                    <navigationItem key="navigationItem" title="Affordable Loan Amount" id="4sB-5w-CWy"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="loanAmountLabel" destination="kf5-Mh-XVd" id="g4G-8F-5gD"/>
+                        <outlet property="monthlyPaymentTextField" destination="nhf-qJ-iHX" id="iyX-A9-l9B"/>
+                        <outlet property="rateField" destination="CJv-Cr-JNg" id="d9X-jN-KIT"/>
+                        <outlet property="termTextField" destination="D78-kw-WxH" id="e8Q-dR-J0M"/>
+                        <outlet property="totalInterestLabel" destination="0qf-I1-AlM" id="br4-3I-yLD"/>
+                        <outlet property="totalPaymentLabel" destination="ApI-ek-6Jf" id="ws7-sb-YOb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYF-JM-mpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="39" y="107"/>
+            <point key="canvasLocation" x="976.79999999999995" y="106.59670164917542"/>
+        </scene>
+        <!--Affordable Loan-->
+        <scene sceneID="koV-Cz-qqD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fSV-eb-OJu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Affordable Loan" image="DollarSign" id="DSJ-Nh-z9r">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="8VZ-WA-pxO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3Nk-oj-39P" kind="relationship" relationship="rootViewController" id="Oti-GD-y4q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFM-9P-bKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="106.59670164917542"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DollarSign" width="60" height="60"/>
+    </resources>
 </document>

@@ -31,7 +31,7 @@
         <scene sceneID="wvt-Cw-Ho0">
             <objects>
                 <viewControllerPlaceholder storyboardName="Month" id="62O-bZ-WSw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="caS-ic-HNS"/>
+                    <tabBarItem key="tabBarItem" title="Payment" id="caS-ic-HNS"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hiZ-7z-DtG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,7 +41,7 @@
         <scene sceneID="e2Y-zg-mAU">
             <objects>
                 <viewControllerPlaceholder storyboardName="Loan" id="ArX-1s-WJB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="tAC-xh-fl6"/>
+                    <tabBarItem key="tabBarItem" title="Loan Amount" id="tAC-xh-fl6"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tEG-us-UPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
